@@ -30,7 +30,7 @@ header {
     background-color: white;
     margin: 0 auto;
     width: 940px;
-    padding: 32px 0;
+    padding: 36px 0;
     font-size: 16px;
     /* text-align: center; */
 }
@@ -54,6 +54,7 @@ header .links a {
     height: 366px;
     background-color: #FBDFDB;
     border-radius: 30px;
+    margin-bottom: 20px;
 }
 
 .banner-text {
@@ -84,7 +85,8 @@ header .links a {
 /* Views section */
 
 .views {
-    margin: 50px auto;
+    margin: 0 auto 50px;
+    padding-top: 30px;
 }
 
 .cards {
@@ -97,12 +99,13 @@ header .links a {
 .card img {
     width: 100%;
     border-radius: 15px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .views h2 {
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .cards h3 {
@@ -134,7 +137,7 @@ footer p {
 /* === ABOUT === */
 
 .about {
-    margin-top: 18px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
