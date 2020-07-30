@@ -21,6 +21,11 @@ a {
     color: black;
 }
 
+section {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
 header {
     background-color: white;
     margin: 0 auto;
@@ -46,8 +51,6 @@ header .links a {
 
 .banner {
     position: relative;
-    margin: 0 auto;
-    max-width: 940px;
     height: 366px;
     background-color: #FBDFDB;
     border-radius: 30px;
@@ -82,7 +85,6 @@ header .links a {
 
 .views {
     margin: 50px auto;
-    max-width: 940px;
 }
 
 .cards {
@@ -114,4 +116,42 @@ header .links a {
     color: #777777;
 }
 
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 62px;
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 23px 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+}
+
+/* === ABOUT === */
+
+.about {
+    margin-top: 18px;
+    margin-bottom: 50px;
+}
+
+.about h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.about p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
 
