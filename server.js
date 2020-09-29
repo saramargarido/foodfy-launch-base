@@ -23,7 +23,7 @@ server.get("/about", function (req, res) {
 })
 
 server.get("/recipes", function (req, res) {
-    return res.render("recipes")
+    return res.render("recipes", { items: recipes })
 })
 
 server.listen(5000, function() {

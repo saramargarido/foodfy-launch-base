@@ -2,76 +2,67 @@
 
 {% block head %}
 <title>Foodfy - Receitas</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
 {% endblock head %}
 
 {% block content %}
 <section class="views">
     <div class="cards">
-        <div class="card">
-            <img src="/assets/burger.png" alt="Hamburguer">
-            <h3>Triplo bacon burger</h3>
-            <p>por Jorge Relato</p>
+        {% for item in items %}
+        <div class="card" id="{{item.id}}">
+            <img src="{{item.img}}" alt="Imagem de {{item.title}}">
+            <h3>{{item.title}}</h3>
+            <p>por {{item.autor}}</p>
         </div>
+        {% endfor %}
 
-        <div class="card">
-            <img src="/assets/pizza.png" alt="Pizza">
-            <h3>Pizza 4 estações</h3>
-            <p>por Fabiana Melo</p>
+        {% for item in items %}
+        <div class="card" id="{{item.id}}">
+            <img src="{{item.img}}" alt="{{item.title}}">
+            <h3>{{item.title}}</h3>
+            <p>por {{item.autor}}</p>
         </div>
-        <div class="card">
-            <img src="/assets/espaguete.png" alt="Espaguete">
-            <h3>Espaguete de alho</h3>
-            <p>por Júlia Kinoto</p>
-        </div>
-        <div class="card">
-            <img src="/assets/lasanha.png" alt="Lasanha mac n' cheese">
-            <h3>Lasanha mac n' cheese</h3>
-            <p>por Juliano Vieira</p>
-        </div>
-        <div class="card">
-            <img src="/assets/doce.png" alt="Doce">
-            <h3>Docinhos pão-do-céu</h3>
-            <p>por Ricardo Golvea</p>
-        </div>
-        <div class="card">
-            <img src="/assets/asinhas.png" alt="Asinhas de frango barbecue">
-            <h3>Asinhas de frango barbecue</h3>
-            <p>por Vania Steroski</p>
-        </div>
-
-        <div class="card">
-            <img src="/assets/burger.png" alt="Hamburguer">
-            <h3>Triplo bacon burger</h3>
-            <p>por Jorge Relato</p>
-        </div>
-
-        <div class="card">
-            <img src="/assets/pizza.png" alt="Pizza">
-            <h3>Pizza 4 estações</h3>
-            <p>por Fabiana Melo</p>
-        </div>
-        <div class="card">
-            <img src="/assets/espaguete.png" alt="Espaguete">
-            <h3>Espaguete de alho</h3>
-            <p>por Júlia Kinoto</p>
-        </div>
-        <div class="card">
-            <img src="/assets/lasanha.png" alt="Lasanha mac n' cheese">
-            <h3>Lasanha mac n' cheese</h3>
-            <p>por Juliano Vieira</p>
-        </div>
-        <div class="card">
-            <img src="/assets/doce.png" alt="Doce">
-            <h3>Docinhos pão-do-céu</h3>
-            <p>por Ricardo Golvea</p>
-        </div>
-        <div class="card">
-            <img src="/assets/asinhas.png" alt="Asinhas de frango barbecue">
-            <h3>Asinhas de frango barbecue</h3>
-            <p>por Vania Steroski</p>
-        </div>
+        {% endfor %}
     </div>
 </section>
+
+<div class="modal-overlay">
+        <div class="modal">
+
+            <div class="modal-content">
+                {# <div class="img-modal"> #}
+                <img src="" alt="">
+                {# </div> #}
+
+                <h3></h3>
+                <p></p>
+
+            </div>
+                
+                <a class="close-modal">
+                Fechar modal</i>
+                </a>
+        </div>
+</div>
+
+{# <div class="modal-overlay">
+        <div class="modal">
+
+            <div class="modal-content">
+                <div class="img-modal" style="background: url('/assets/asinhas.png') no-repeat center center / cover">
+                </div>
+                        <h1>Asinhas de frango ao barbecue</h1>
+                        <p>por Vania Steroski</p>
+            </div>
+                <a class="close-modal">
+                Fechar modal</i>
+                </a>
+        </div>
+</div> #}
+
+    <script src="scripts.js"></script>
+
 {% endblock content %}
 
 
