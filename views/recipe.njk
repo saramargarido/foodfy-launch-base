@@ -16,17 +16,26 @@ rel="stylesheet">
 <h3>{{item.title}}</h3>
 <p>{{item.author}}</p>
 
-<h4>Ingredientes</h4>
-<p>{{item.ingredients}}</p>
+<h4>Ingredientes</h4> <small>Esconder</small>
 
-<h4>Preparação</h4>
+<ul>
+
+{% for ingredient in item.ingredients %}
+<li>
+    {{ingredient}}
+</li>
+{% endfor %}
+
+
+</ul>
+<h4>Modo de preparo</h4> <small>Esconder</small>
 <p>{{item.preparation}}</p>
 
 </div>
 
     <script src="scripts.js"></script>
 
+</section>
 {% endblock content %}
-
 
 
