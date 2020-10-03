@@ -9,25 +9,25 @@ rel="stylesheet">
 {% block content %}
 <section class="views">
     <div class="cards">
-        {% for item in items %}
+        {# {% for item in items %}
         <div class="card" id="{{item.id}}">
             <img src="{{item.img}}" alt="Imagem de {{item.title}}">
             <h3>{{item.title}}</h3>
             <p>por {{item.autor}}</p>
         </div>
-        {% endfor %}
+        {% endfor %} #}
 
         {% for item in items %}
         <div class="card" id="{{item.id}}">
-            <img src="{{item.img}}" alt="{{item.title}}">
+            <img src="{{item.image}}" alt="{{item.title}}">
             <h3>{{item.title}}</h3>
-            <p>por {{item.autor}}</p>
+            <p>por {{item.author}}</p>
         </div>
         {% endfor %}
     </div>
 </section>
 
-<div class="modal-overlay">
+{# <div class="modal-overlay">
         <div class="modal">
 
             <div class="modal-content">
@@ -44,7 +44,7 @@ rel="stylesheet">
                 Fechar modal</i>
                 </a>
         </div>
-</div>
+</div> #}
 
     <script src="scripts.js"></script>
 
