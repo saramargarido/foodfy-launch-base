@@ -45,6 +45,11 @@ header .links a {
     margin-right: 30px;
 }
 
+
+/* a:active {
+    font-weight: bold;
+} */
+
 /* === HOME === */
 
 /* Banner Section */
@@ -100,6 +105,10 @@ header .links a {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
+}
+
+.card:hover {
+    cursor: pointer;
 }
 
 .views h2 {
@@ -201,9 +210,9 @@ header .links a {
     top: 50%;
     width: 100%;
     height: auto;
-     -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);  
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);  
 }
 /* .modal-content img {
     width: 600px;
