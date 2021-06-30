@@ -1,7 +1,7 @@
 {
   "name": "foodfy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desafio final Launchbase",
   "main": "server.js",
   "scripts": {
     "start": "npm-run-all -p nodemon browsersync",
@@ -14,10 +14,11 @@
   "dependencies": {
     "browser-sync": "^2.27.3",
     "express": "^4.17.1",
-    "npm-run-all": "^4.1.5",
     "nunjucks": "^3.2.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.9"
+    "browser-sync": "^2.27.3",
+    "nodemon": "^2.0.9",
+    "npm-run-all": "^4.1.5"
   }
 }
