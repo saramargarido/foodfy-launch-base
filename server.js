@@ -26,8 +26,9 @@ server.get("/recipes", function (req, res) {
     return res.render("recipes", { items: recipes })
 })
 
-server.get("/recipe", function(req, res) {
-    const id = req.query.id
+server.get("/recipes/:id", function (req, res) {
+    // console.log(req.params.id)
+    const id = req.params.id
 
     const recipe = recipes.find(function(recipe) {
         if (recipe.id == id) {
@@ -35,6 +36,7 @@ server.get("/recipe", function(req, res) {
         }
     })
     if (!recipe) {
+        console.log(recipe)
         return res.send("Recipe not found")
     }
 

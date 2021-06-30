@@ -153,6 +153,63 @@ header .links a {
     line-height: 28px;
 }
 
+/* === RECIPES === */
+.card.recipe .title {
+    text-align: center;
+}
+
+.card.recipe h3 {
+    font-size: 36px;
+}
+
+.card.recipe h4 {
+    font-size: 28px;
+}
+
+.card.recipe small {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.card.recipe p {
+    font-size: 20px;
+    color: #777777;
+}
+
+.card.recipe img {
+    margin-bottom: 50px;
+}
+
+.card.recipe .list .list-title {
+    margin-bottom: 20px;
+}
+
+.card.recipe .list .list-content ul {
+    margin-bottom: 40px;
+    margin-left: 1rem;
+}
+
+.card.recipe .list .list-content ul.steps {
+    list-style: none;
+    margin-left: 0;
+}
+
+.card.recipe .list .list-content ul li,
+.card.recipe .list .list-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+}
+
+.card.recipe .list.information .list-title {
+    margin-bottom: 0;
+}
+
+.card.recipe .list.information .list-content p {
+    white-space: pre-line;
+}
+
 /* === MODAL === */
 
 .modal-overlay {

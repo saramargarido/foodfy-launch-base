@@ -1,42 +1,56 @@
 {% extends "layout.njk" %}
-
 {% block head %}
-<title>Foodfy - Receitas</title>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-rel="stylesheet">
-<link rel="stylesheet" href="/recipes.css">
+    <title>Foodfy - Receitas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/recipes.css">
 {% endblock head %}
-
 {% block content %}
-<section class="views">
-    
-<div class="card">
-        
-
-<img src="{{item.image}}" alt="">
-<h3>{{item.title}}</h3>
-<p>{{item.author}}</p>
-
-<h4>Ingredientes</h4> <small>Esconder</small>
-
-<ul>
-
-{% for ingredient in item.ingredients %}
-<li>
-    {{ingredient}}
-</li>
-{% endfor %}
-
-
-</ul>
-<h4>Modo de preparo</h4> <small>Esconder</small>
-<p>{{item.preparation}}</p>
-
-</div>
-
-    <script src="scripts.js"></script>
-
-</section>
+    <section class="views">
+        <div class="card recipe">
+            <img src="{{ item.image }}" alt="">
+                <div class="title">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.author }}</p>
+                </div>
+                <div class="list">
+                    <div class="list-title">
+                        <h4>Ingredientes <small>Esconder</small></h4>
+                    </div>
+                    <div class="list-content">
+                        <ul>
+                            {% for ingredient in item.ingredients %}
+                                <li>
+                                    {{ ingredient }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list-title">
+                        <h4>Modo de preparo <small>Esconder</small></h4>
+                    </div>
+                    <div class="list-content">
+                        <ul class="steps">
+                        {% for step in item.preparation %}
+                            <li>
+                                {{ step }}
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="list information">
+                    <div class="list-title">
+                        <h4>Informações adicionais <small>Esconder</small></h4>
+                    </div>
+                    <div class="list-content">
+                        <p>
+                            {{ item.information }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+<script src="scripts.js"></script>
 {% endblock content %}
-
-
