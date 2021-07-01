@@ -36,7 +36,6 @@ server.get("/recipes/:id", function (req, res) {
         }
     })
     if (!recipe) {
-        console.log(recipe)
         return res.send("Recipe not found")
     }
 

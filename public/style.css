@@ -45,6 +45,9 @@ header .links a {
     margin-right: 30px;
 }
 
+.d-none {
+    display: none;
+}
 
 /* a:active {
     font-weight: bold;
@@ -172,6 +175,7 @@ header .links a {
     font-size: 14px;
     text-transform: uppercase;
     color: #999999;
+    cursor: pointer;
 }
 
 .recipe img {
