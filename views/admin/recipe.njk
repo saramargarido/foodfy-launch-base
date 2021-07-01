@@ -1,0 +1,56 @@
+{% extends "layout.njk" %}
+{% block head %}
+    <title>Foodfy - Receitas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/recipes.css">
+{% endblock head %}
+{% block content %}
+    <section class="views">
+        <div class="recipe">
+            <img src="{{ item.image }}" alt="">
+            <div class="title">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.author }}</p>
+            </div>
+            <div class="list">
+                <div class="list-title">
+                    <h4>Ingredientes <small data-title="ingredients">Esconder</small></h4>
+                </div>
+                <div class="list-content" id="ingredients">
+                    <ul>
+                        {% for ingredient in item.ingredients %}
+                            <li>
+                                {{ ingredient }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="list">
+                <div class="list-title">
+                    <h4>Modo de preparo <small data-title="steps">Esconder</small></h4>
+                </div>
+                <div class="list-content" id="steps">
+                    <ul class="steps">
+                    {% for step in item.preparation %}
+                        <li>
+                            {{ step }}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="list information">
+                <div class="list-title">
+                    <h4>Informações adicionais <small data-title="informations">Esconder</small></h4>
+                </div>
+                <div class="list-content" id="informations">
+                    <p>
+                        {{ item.information }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

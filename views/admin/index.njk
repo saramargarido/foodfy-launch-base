@@ -18,7 +18,7 @@
     <div class="cards">
     
         {% for item in items %}
-        <a href="/recipes/{{ item.id }}" class="card">
+        <a href="/admin/recipes/{{ item.id }}" class="card">
             <img src="{{item.image}}" alt="{{item.title}}">
             <h3>{{item.title}}</h3>
             <p>por {{item.author}}</p>
