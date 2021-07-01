@@ -9,27 +9,30 @@
     {% endblock head %}
 </head>
 <body>
-    <header>
-        <span>
-            <a href="/">
-            <img src="/assets/logo.png" alt="Logo Foodfy">
-            </a>
-        </span>
-        <div class="links" id="links">
-            <a class="link-about" href="/about">Sobre</a>
-            <a class="link-recipes" href="/recipes">Receitas</a>
+    <div class="container">
+        <div class="content">
+            <header>
+                <span>
+                    <a href="/">
+                    <img src="/assets/logo.png" alt="Logo Foodfy">
+                    </a>
+                </span>
+                <div class="links" id="links">
+                    <a class="link-about" href="/about">Sobre</a>
+                    <a class="link-recipes" href="/recipes">Receitas</a>
+                </div>
+            </header>
+
+            {% block content %}
+            {% endblock %}
+
+            {% block recipes %}
+            {% endblock recipes %}
         </div>
-    </header>
-
-    {% block content %}
-    {% endblock %}
-
-    {% block recipes %}
-    {% endblock recipes %}
-
-    <footer>
-        <p>Todos direitos reservados, receitas Foodfy.</p>
-    </footer>
+        <footer>
+            <p>Todos direitos reservados, receitas Foodfy.</p>
+        </footer>
+    </div>
 
     <script src="/scripts.js"></script>
 </body>

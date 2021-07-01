@@ -11,9 +11,23 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #111111;
+    height: 100%;
+}
+
+div.container {
+    min-height: 100%;
+    position: relative;
+}
+
+div.content {
+    padding-bottom: 62px;
 }
 
 a {
@@ -294,8 +308,9 @@ header .links a {
 }
 
 /* Footer */
-
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 62px;
     background-color: #EEEEEE;
