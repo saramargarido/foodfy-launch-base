@@ -1,4 +1,4 @@
-{% extends "layout.njk" %}
+{% extends "admin/layout.njk" %}
 {% block head %}
     <title>Foodfy - Receitas</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -6,8 +6,16 @@
 {% endblock head %}
 {% block content %}
     <section class="views">
+        <div class="banner-header">
+            <div>
+                <h1>Receita: {{ item.title }}</h1>
+            </div>
+            <div>
+                <a href="/admin/recipes/{{ item.id }}/edit">Editar receita</a>
+            </div>
+        </div>
         <div class="recipe">
-            <img src="{{ item.image }}" alt="">
+            <img src="{{ item.image }}" alt="{{ item.title }}">
             <div class="title">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.author }}</p>

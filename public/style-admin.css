@@ -102,13 +102,6 @@ header div {
     font-weight: bold;
 }
 
-.recipe img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-
 /* === RECIPES === */
 .recipe .title {
     text-align: center;
@@ -130,8 +123,33 @@ header div {
     cursor: pointer;
 }
 
+.banner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-header div a {
+    background-color: #6558C3;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 20px;
+    transition: 400ms;
+}
+
+.banner-header div a:hover {
+    opacity: .8;
+}
+
 .recipe img {
-    margin-bottom: 50px;
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    margin: 24px 0 50px;
 }
 
 .recipe .list .list-title {
