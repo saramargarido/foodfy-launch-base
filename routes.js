@@ -10,7 +10,7 @@ routes.get("/recipes", recipes.recipesList)
 routes.get("/recipes/:id", recipes.show)
 
 routes.get("/admin/recipes", admin.index); // Mostrar a lista de receitas
-// routes.get("/admin/recipes/create", admin.create); // Mostrar formulário de nova receita
+routes.get("/admin/recipes/create", admin.create); // Mostrar formulário de nova receita
 routes.get("/admin/recipes/:id", admin.show); // Exibir detalhes de uma receita
 // routes.get("/admin/recipes/:id/edit", admin.edit); // Mostrar formulário de edição de receita
 
