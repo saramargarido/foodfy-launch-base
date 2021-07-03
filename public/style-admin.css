@@ -129,7 +129,7 @@ header div {
     align-items: center;
 }
 
-.banner-header div a {
+.btn-primary {
     background-color: #6558C3;
     border-radius: 4px;
     color: #FFF;
@@ -137,9 +137,11 @@ header div {
     font-weight: bold;
     padding: 9px 20px;
     transition: 400ms;
+    border: none;
+    cursor: pointer;
 }
 
-.banner-header div a:hover {
+.btn-primary:hover {
     opacity: .8;
 }
 
