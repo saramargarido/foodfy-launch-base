@@ -1,35 +1,37 @@
-<div class="item">
-    <div>Imagem da receita</div>
+<div class="form-fields">
+    <div class="item">
+        <label for="image">Imagem da receita</label>
         <div>
-            <input type="url" name="avatar_url" placeholder="http://" value="{{ admin.image }}">
+            <input id="image" type="url" name="avatar_url" placeholder="http://" value="{{ admin.image }}">
         </div>
     </div>
 
     <div class="item">
-        <div>Título da receita</div>
+        <label for="title">Título da receita</label>
         <div>
-            <input type="text" name="title" placeholder="Nome da receita" value="{{ admin.title }}">
+            <input id="title" type="text" name="title" placeholder="Nome da receita" value="{{ admin.title }}">
         </div>
     </div>
 
     <div class="item">
-        <div>Ingredientes</div>
+        <label for="ingredients">Ingredientes</label>
         <div>
-            <input type="text" name="ingredients" value="{{ admin.ingredients }}">
+            <input id="ingredients" type="text" name="ingredients" value="{{ admin.ingredients }}">
         </div>
     </div>
 
     <div class="item">
-        <div>Modo de preparo</div>
+        <label for="prepararion">Modo de preparo</label>
         <div>
-            <input type="text" name="preparation" value="{{ admin.preparation }}">
+            <input id="prepararion" type="text" name="preparation" value="{{ admin.preparation }}">
         </div>
     </div>
 
     <div class="item">
-        <div>Informações adicionais</div>
+        <label for="information">Informações adicionais</label>
         <div>
-            <textarea name="information" value="{{ admin.preparation }}"></textarea>
+            <textarea rows="15" id="information" name="information" value="{{ admin.information }}"></textarea>
         </div>
     </div>
 </div>
+
