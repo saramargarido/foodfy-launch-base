@@ -14,24 +14,53 @@
     </div>
 
     <div class="item">
-        <label for="ingredients">Ingredientes</label>
-        <div>
-            <input id="ingredients" type="text" name="ingredients" value="{{ admin.ingredients }}">
+        <div id="ingredients">
+            <label for="ingredients">Ingredientes</label>
+            <div class="input-field-ingredients">
+                <input id="ingredients" type="text" name="ingredients" value="{{ admin.ingredients }}">
+            </div>
         </div>
+        <button type="button" class="btn-add" data-id="ingredients">Adicionar novo ingrediente</button>
     </div>
 
     <div class="item">
-        <label for="prepararion">Modo de preparo</label>
-        <div>
-            <input id="prepararion" type="text" name="preparation" value="{{ admin.preparation }}">
+        <div id="steps">
+            <label for="preparation">Modo de preparo</label>
+            <div class="input-field-steps">
+                <input id="preparation" type="text" name="preparation" value="{{ admin.preparation }}">
+            </div>
         </div>
+        <button type="button" class="btn-add" data-id="steps">Adicionar novo passo</button>
     </div>
 
     <div class="item">
         <label for="information">Informações adicionais</label>
         <div>
-            <textarea rows="15" id="information" name="information" value="{{ admin.information }}"></textarea>
+            <textarea rows="15" id="information" name="information[]" value="{{ admin.information }}"></textarea>
         </div>
     </div>
 </div>
+
+<script>
+    function addInput() {
+    const fieldId = this.dataset.id
+    const fields = document.querySelector("#"+fieldId);
+    const fieldContainer = document.querySelectorAll(".input-field-"+fieldId);
+
+    // Realiza um clone do último ingrediente adicionado
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+    // Não adiciona um novo input se o último tem um valor vazio
+    if (newField.children[0].value == "") return false;
+
+    // Deixa o valor do input vazio
+    newField.children[0].value = "";
+    fields.appendChild(newField);
+    }
+
+    const btnsAdd = document.querySelectorAll('.btn-add')
+    for (let btnAdd of btnsAdd) {
+    btnAdd.addEventListener("click", addInput)
+    }
+</script>
 

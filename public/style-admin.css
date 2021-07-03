@@ -208,6 +208,16 @@ header div {
     height: auto;
 }
 
+.btn-add {
+    background: transparent;
+    border: none;
+    color: #6558C3;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     position: absolute;
