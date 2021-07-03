@@ -1,0 +1,22 @@
+{% extends "admin/layout.njk" %}
+
+{% block content %}
+<form method="POST" action="/admin/recipes?_method=PUT">
+    <section class="views">
+        <div class="banner-header">
+            <div>
+                <h1>Editando receita</h1>
+            </div>
+            <div>
+                <button class="btn-primary" type="button">Deletar</button>
+                <button class="btn-primary" type="submit">Salvar receita</button>
+            </div>
+        </div>
+            
+            {% include 'admin/fields.njk' %}
+            <input type="hidden" name="id" value="{{ recipe.id }}">
+
+    </section>
+</form>
+{% endblock content %}
+

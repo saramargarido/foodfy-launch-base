@@ -140,13 +140,16 @@
       "information": ""
     },
     {
+      "id": "brigadeiro",
       "image": "https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2020/10/13/receitas-com-brigadeiro.jpg",
-      "title": "Brigadeiro de festa",
+      "title": "Brigadeiro",
+      "author": "Sara Margarido",
       "ingredients": [
         "1 lata de Leite condensado",
         "3 colheres de Toddy",
         "1 colher de manteiga",
-        "Granulado"
+        "Granulado",
+        ""
       ],
       "preparation": [
         "Misture o leite condensado, com o toddy e a margarina e leve ao fogo baixo",
