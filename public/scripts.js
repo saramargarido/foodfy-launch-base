@@ -37,6 +37,14 @@ function addInput() {
     fields.appendChild(newField);
 }
 
+const formDelete = document.querySelector('#delete')
+formDelete.addEventListener('click', function(event) {
+    const confirmation = confirm('Deseja deletar?')
+    if(!confirmation) {
+        event.preventDefault()
+    }
+})
+
 
 
 

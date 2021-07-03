@@ -141,6 +141,10 @@ header div {
     cursor: pointer;
 }
 
+.delete {
+    background-color: #DC4747;
+}
+
 .btn-primary:hover {
     opacity: .8;
 }
