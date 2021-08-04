@@ -11,11 +11,11 @@ rel="stylesheet">
 <section class="views">
     <div class="cards">
         {% for item in items %}
-        <div class="card" id="{{item.id}}">
+        <a href="/recipes/{{ item.id }}" class="card" id="{{item.id}}">
             <img src="{{item.image}}" alt="{{item.title}}">
             <h3>{{item.title}}</h3>
             <p>por {{item.author}}</p>
-        </div>
+        </a>
         {% endfor %}
     </div>
 </section>
