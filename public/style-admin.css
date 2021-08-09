@@ -39,6 +39,7 @@ header {
     background-color: #111111;
     height: 80px;
     width: 100%;
+
 }
 
 header div {
@@ -47,6 +48,27 @@ header div {
     max-width: 940px;
     display: flex;
     align-items: center;
+}
+
+header div a img {
+    margin-right: 20px;
+}
+
+header nav.navbar a {
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+header nav.navbar a.active {
+    color: #FFF;
+}
+
+header nav.navbar a:hover {
+    border-bottom: 2px solid #FFF;
+    transition: 100ms;
 }
 
 .d-none {

@@ -16,6 +16,10 @@
                     <a href="/admin/recipes">
                     <img src="/assets/logo-invert.png" alt="Logo Foodfy">
                     </a>
+                    <nav class="navbar">
+                        <a href="/admin/recipes">Receitas</a>
+                        <a href="/admin/chefs">Chefs</a>
+                    </nav>
                 </div>
             </header>
 
@@ -31,5 +35,15 @@
     </div>
 
     <script src="/scripts.js"></script>
+    <script>
+        const currentPage = location.pathname
+        const menuItems = document.querySelectorAll('.navbar a')
+
+        for (item of menuItems) {
+            if(currentPage.includes(item.getAttribute('href'))) {
+                item.classList.add('active')
+            }
+        }
+    </script>
 </body>
 </html>

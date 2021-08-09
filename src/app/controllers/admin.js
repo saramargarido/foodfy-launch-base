@@ -103,7 +103,11 @@ module.exports = {
     
             return res.redirect(`/admin/recipes`)
         })
-}
+    },
+
+    chefs(req, res) {
+        return res.render("admin/chefs", { items: data.recipes })
+    },
 }
 
 

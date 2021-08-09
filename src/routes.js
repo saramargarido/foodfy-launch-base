@@ -18,4 +18,7 @@ routes.post("/admin/recipes", admin.post); // Cadastrar nova receita
 routes.put("/admin/recipes", admin.put); // Editar uma receita
 routes.delete("/admin/recipes", admin.delete); // Deletar uma receita
 
+routes.get("/admin/chefs", admin.chefs); // Mostrar a lista de chefs
+
+
 module.exports = routes
