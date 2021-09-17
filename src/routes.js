@@ -5,9 +5,9 @@ const admin = require('./app/controllers/admin')
 
 routes.get('/', recipes.index)
 
-routes.get("/about", recipes.about)
-routes.get("/recipes", recipes.recipesList)
-routes.get("/recipes/:id", recipes.show)
+// routes.get("/about", recipes.about)
+// routes.get("/recipes", recipes.recipesList)
+// routes.get("/recipes/:id", recipes.show)
 
 routes.get("/admin/recipes", admin.index); // Mostrar a lista de receitas
 routes.get("/admin/recipes/create", admin.create); // Mostrar formulário de nova receita

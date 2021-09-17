@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('../../../data.json')
+const Admin = require('../models/Admin')
 
 module.exports = {
     index(req, res) {
